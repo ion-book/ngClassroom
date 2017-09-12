@@ -1,14 +1,14 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-title>Ng-ClassRoom</ion-title>
+</ion-header>
+ 
+<ion-content class="feed-list" padding>
+  <ion-spinner *ngIf="loading" id="feed-spinner"></ion-spinner>
+  <ion-list *ngIf="selectedFeed" class="spinner">
+    <ion-item *ngFor="let item of articles" (click)="openArticle(item.link)" class="feed-article">
+      <div class="article-title">{{item.title}}</div><br>
+      <p [innerHtml]="item.description"></p>
+    </ion-item>
+  </ion-list>
 </ion-content>
