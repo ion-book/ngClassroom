@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { NavParams, IonicPage } from 'ionic-angular';
+import { NavController, NavParams, IonicPage } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { FeedProvider, FeedItem, Feed } from '../../providers/feed/feed';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { LoginPage } from '../../pages/login/login';
  
 @IonicPage({
 })
@@ -17,7 +19,9 @@ export class HomePage {
   constructor(
     private iab: InAppBrowser, 
     private feedProvider: FeedProvider,
-    public navParams: NavParams) {
+    public navParams: NavParams,
+    public afAuth:AngularFireAuth,
+    public navController: NavController) {
     this.selectedFeed = {
       title: "Ng-Classroom",
       url: "https://www.ion-book.com/feed.xml"
@@ -36,6 +40,10 @@ export class HomePage {
       this.loading = false;
     });
   }
+  logOut(){
+    this.afAuth.auth.signOut();
+    this.navController.setRoot(LoginPage);
+   }
  
   public ionViewWillEnter() {
     if (this.selectedFeed !== undefined && this.selectedFeed !== null ) {

@@ -1,8 +1,8 @@
 <ion-header>
-
-    <ion-title>Ng-ClassRoom</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
 </ion-header>
- 
 <ion-content class="feed-list" padding>
   <ion-spinner *ngIf="loading" id="feed-spinner"></ion-spinner>
   <ion-list *ngIf="selectedFeed" class="spinner">
@@ -11,4 +11,9 @@
       <p [innerHtml]="item.description"></p>
     </ion-item>
   </ion-list>
+  <ion-item>
+      <a ion-button block clear (click)="logOut()">
+            Salir
+      </a>
+    </ion-item>
 </ion-content>
