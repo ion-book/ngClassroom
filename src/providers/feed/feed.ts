@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Storage } from '@ionic/storage';
-import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the FeedProvider provider.
@@ -43,7 +42,6 @@ export class FeedProvider {
  
   public getSavedFeeds() {
     return this.storage.get('savedFeeds').then(data => {
-      let objFromString = JSON.parse(data);
       if (data !== null && data !== undefined) {
         return JSON.parse(data);
       } else {

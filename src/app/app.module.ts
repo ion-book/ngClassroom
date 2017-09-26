@@ -16,12 +16,12 @@ import { FeedProvider } from '../providers/feed/feed';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyAbD19sI5Xz_jKjEMCQhjuYXVPrdn3YEsY",
-  authDomain: "codelab-22299.firebaseapp.com",
-  databaseURL: "https://codelab-22299.firebaseio.com",
-  projectId: "codelab-22299",
-  storageBucket: "codelab-22299.appspot.com",
-  messagingSenderId: "141181591031"
+  apiKey: "AIzaSyAcwAZXrTIIb6894gVvRp9WlJGTYJftBZo",
+  authDomain: "ion-book.firebaseapp.com",
+  databaseURL: "https://ion-book.firebaseio.com",
+  projectId: "ion-book",
+  storageBucket: "ion-book.appspot.com",
+  messagingSenderId: "906849912455"
 };
 
 @NgModule({
