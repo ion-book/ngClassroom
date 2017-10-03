@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ng-classroom.app" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ng-classroom.app" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Ngclassroom</name>
     <description>Learn to code with Angular, Ionic, Nativescript and Firebase.</description>
     <author email="todos@ion-book.com" href="https://www.ng-classroom.com/">Ng-Classroom Team</author>
