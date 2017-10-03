@@ -1,6 +1,6 @@
 page-login {
     .background {
-        background: rgba(209, 255, 237, 0.5);
+        //background: rgba(209, 255, 237, 0.5);
         //background: url('../assets/fondolinea.jpg') center;
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -24,8 +24,7 @@ page-login {
     }
     .logo {
         width: 100%;
-        height: 45%;
-        padding-top: 15px;
+        padding-top: 35%;
         padding-bottom: 0px;
         margin-bottom: 15px;
         background: url('../assets/fondoimg.png') top;
